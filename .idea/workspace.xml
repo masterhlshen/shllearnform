@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="shl-learnform:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7c73aa3-7c7c-4d3d-be5b-7e13778b0cea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/cp2/MaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/cp2/TestSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/cp3/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/cp3/SequentialSearchST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/util/In.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/util/StdIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/util/StdOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/ag4/util/StdRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/graphics/AgloFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/graphics/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/practice/CycleSingleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/practice/SimpleLRU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/practice/SingleLinkList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/practice/TwoWayCycleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/algorithm/practice/TwoWayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/deplayXc/DeplayCfgVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/deplayXc/DeplayedHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/generic/FirstDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/generic/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/CTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/CaseJudge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/DeleteXCProjectOverlays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/EduFlexTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/EduWorkReportFileInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/Fbnc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/MoralDesignation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/PPT2Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/RandomAccessFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/SildeWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/SlowSqlAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/tree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/tree/BinnaryTreeMaxDepth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/tree/BinnaryTreeTranverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/tree/LevelTraverseTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/util/RmqttUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/util/TimerCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/util/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shl/xp/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/createsql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mybatiscfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shl/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shl/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shl/util/DbBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shl/util/DbBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shl/util/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shl/util/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dbconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/develop_soft/apache-maven-3.6.2_aiyun" />
+        <option name="userSettingsFile" value="D:\develop_soft\apache-maven-3.6.2_aiyun\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ppmaT6MhDUBuJg5TLOdSUibOUW" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shl.algorithm.ag4.cp2" />
+      <recent name="com.shl.algorithm.ag4.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\opensource\shllearnform\target\classes" />
+      <recent name="E:\opensource\shllearnform\src\main\resources" />
+      <recent name="E:\opensource\shllearnform\src\main\java\com\shl\test" />
+      <recent name="E:\opensource\shllearnform\src\main\java\com\shl\algorithm\ag4\cp2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.DeplayedHelper">
+    <configuration name="DeleteXCProjectOverlays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shl.test.DeleteXCProjectOverlays" />
+      <module name="shl-learnform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shl.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeplayedHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shl.deplayXc.DeplayedHelper" />
+      <module name="shl-learnform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shl.deplayXc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelTraverseTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shl.tree.LevelTraverseTree" />
+      <module name="shl-learnform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shl.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomAccessFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shl.test.RandomAccessFileTest" />
+      <module name="shl-learnform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shl.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shl.test.Test2" />
+      <module name="shl-learnform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shl.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DeplayedHelper" />
+        <item itemvalue="Application.DeleteXCProjectOverlays" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.RandomAccessFileTest" />
+        <item itemvalue="Application.LevelTraverseTree" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7c73aa3-7c7c-4d3d-be5b-7e13778b0cea" name="Default Changelist" comment="" />
+      <created>1615888468475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615888468475</updated>
+      <workItem from="1615888471209" duration="5651000" />
+      <workItem from="1616637312543" duration="1145000" />
+      <workItem from="1616653389098" duration="641000" />
+      <workItem from="1617018029655" duration="2513000" />
+      <workItem from="1617075336054" duration="877000" />
+      <workItem from="1617256382478" duration="54000" />
+      <workItem from="1617256454462" duration="253000" />
+      <workItem from="1619514557022" duration="58000" />
+      <workItem from="1619769693343" duration="38000" />
+      <workItem from="1621481198759" duration="969000" />
+      <workItem from="1624851188403" duration="986000" />
+      <workItem from="1622787397641" duration="190000" />
+      <workItem from="1622792459211" duration="338000" />
+      <workItem from="1622792903973" duration="922000" />
+      <workItem from="1623922692311" duration="500000" />
+      <workItem from="1623923212593" duration="103000" />
+      <workItem from="1623923395061" duration="63000" />
+      <workItem from="1625103146163" duration="133000" />
+      <workItem from="1625110913305" duration="160000" />
+      <workItem from="1625710976974" duration="108000" />
+      <workItem from="1625736279297" duration="5354000" />
+      <workItem from="1625795464044" duration="4071000" />
+      <workItem from="1625821820096" duration="2753000" />
+      <workItem from="1626155814651" duration="199000" />
+      <workItem from="1626246812172" duration="1061000" />
+      <workItem from="1626681456501" duration="1256000" />
+      <workItem from="1626832822490" duration="19284000" />
+      <workItem from="1627028953190" duration="2755000" />
+      <workItem from="1628162571975" duration="264000" />
+      <workItem from="1628748920731" duration="1472000" />
+      <workItem from="1629201117360" duration="8253000" />
+      <workItem from="1629216116116" duration="111000" />
+      <workItem from="1629243133123" duration="627000" />
+      <workItem from="1629790397325" duration="1203000" />
+      <workItem from="1629792571937" duration="789000" />
+      <workItem from="1629808127330" duration="321000" />
+      <workItem from="1629851698447" duration="29000" />
+      <workItem from="1629852711738" duration="6961000" />
+      <workItem from="1629861614687" duration="924000" />
+      <workItem from="1629876920470" duration="206000" />
+      <workItem from="1629879184067" duration="642000" />
+      <workItem from="1629882921177" duration="56000" />
+      <workItem from="1629941030746" duration="637000" />
+      <workItem from="1630054157108" duration="1105000" />
+      <workItem from="1630467498201" duration="96000" />
+      <workItem from="1630467626652" duration="24000" />
+      <workItem from="1630631240973" duration="4082000" />
+      <workItem from="1631068979098" duration="17000" />
+      <workItem from="1631069070054" duration="612000" />
+      <workItem from="1631760725464" duration="1392000" />
+      <workItem from="1632458669937" duration="2497000" />
+      <workItem from="1632986006422" duration="631000" />
+      <workItem from="1632991164232" duration="4000" />
+      <workItem from="1633679336732" duration="139000" />
+      <workItem from="1633804111125" duration="101000" />
+      <workItem from="1634031109753" duration="547000" />
+      <workItem from="1634114075375" duration="1378000" />
+      <workItem from="1634869236552" duration="1276000" />
+      <workItem from="1635122202634" duration="18000" />
+      <workItem from="1636003444678" duration="3693000" />
+      <workItem from="1636074227743" duration="855000" />
+      <workItem from="1636333045854" duration="618000" />
+      <workItem from="1636616761358" duration="1413000" />
+      <workItem from="1636941847525" duration="240000" />
+      <workItem from="1636954113250" duration="82000" />
+      <workItem from="1636960549042" duration="788000" />
+      <workItem from="1637631176885" duration="10666000" />
+      <workItem from="1637998501177" duration="1222000" />
+      <workItem from="1638336489269" duration="659000" />
+      <workItem from="1638407033035" duration="166000" />
+      <workItem from="1638422004635" duration="136000" />
+      <workItem from="1638422171303" duration="1062000" />
+      <workItem from="1638441473215" duration="1603000" />
+      <workItem from="1638603845384" duration="158000" />
+      <workItem from="1638604210272" duration="52000" />
+      <workItem from="1638845143309" duration="124000" />
+      <workItem from="1638931503981" duration="1325000" />
+      <workItem from="1639106818062" duration="176000" />
+      <workItem from="1639122206916" duration="460000" />
+      <workItem from="1639554298521" duration="372000" />
+      <workItem from="1640329085667" duration="37000" />
+      <workItem from="1640937914537" duration="81000" />
+      <workItem from="1641372286294" duration="27000" />
+      <workItem from="1641383454429" duration="144000" />
+      <workItem from="1641457924910" duration="3033000" />
+      <workItem from="1641523377344" duration="1320000" />
+      <workItem from="1641800774261" duration="55000" />
+      <workItem from="1641815328721" duration="552000" />
+      <workItem from="1641872442315" duration="610000" />
+      <workItem from="1641898984492" duration="60000" />
+      <workItem from="1641899054989" duration="610000" />
+      <workItem from="1642059693668" duration="1246000" />
+      <workItem from="1642124447724" duration="603000" />
+      <workItem from="1642130899218" duration="8999000" />
+      <workItem from="1642161527804" duration="5186000" />
+      <workItem from="1642380653597" duration="5594000" />
+      <workItem from="1642433059655" duration="10788000" />
+      <workItem from="1642520247159" duration="612000" />
+      <workItem from="1642552873433" duration="626000" />
+      <workItem from="1642654081089" duration="2907000" />
+      <workItem from="1642728158331" duration="599000" />
+      <workItem from="1643427174991" duration="1799000" />
+      <workItem from="1644368131752" duration="11000" />
+      <workItem from="1644409126840" duration="4000" />
+      <workItem from="1644453712288" duration="1212000" />
+      <workItem from="1646288133361" duration="73000" />
+      <workItem from="1646967062840" duration="256000" />
+      <workItem from="1646967390079" duration="200000" />
+      <workItem from="1648263979456" duration="865000" />
+      <workItem from="1648349639472" duration="2425000" />
+      <workItem from="1648442712078" duration="8000" />
+      <workItem from="1648455700559" duration="186000" />
+      <workItem from="1648524594405" duration="4723000" />
+      <workItem from="1649040475979" duration="795000" />
+      <workItem from="1649043021319" duration="604000" />
+      <workItem from="1649400498868" duration="159000" />
+      <workItem from="1649400749512" duration="932000" />
+      <workItem from="1650005952675" duration="10212000" />
+      <workItem from="1650507896763" duration="4370000" />
+      <workItem from="1650607300113" duration="11000" />
+      <workItem from="1650613048946" duration="8299000" />
+      <workItem from="1650681645160" duration="1842000" />
+      <workItem from="1650894049846" duration="6032000" />
+      <workItem from="1651025035626" duration="1095000" />
+      <workItem from="1651134346951" duration="122000" />
+      <workItem from="1651408349049" duration="600000" />
+      <workItem from="1651649422990" duration="141000" />
+      <workItem from="1651651457546" duration="1065000" />
+      <workItem from="1651654351756" duration="831000" />
+      <workItem from="1651673070988" duration="607000" />
+      <workItem from="1651711295286" duration="926000" />
+      <workItem from="1651742378246" duration="34000" />
+      <workItem from="1652143757563" duration="248000" />
+      <workItem from="1652182082338" duration="1591000" />
+      <workItem from="1652227932939" duration="1245000" />
+      <workItem from="1652272195147" duration="2400000" />
+      <workItem from="1652315343320" duration="600000" />
+      <workItem from="1652356677441" duration="1708000" />
+      <workItem from="1652401558236" duration="3287000" />
+      <workItem from="1652711898889" duration="2807000" />
+      <workItem from="1652778813993" duration="500000" />
+      <workItem from="1652833928631" duration="438000" />
+      <workItem from="1652848135581" duration="1357000" />
+      <workItem from="1652883648052" duration="3017000" />
+      <workItem from="1652951577413" duration="41000" />
+      <workItem from="1653101079347" duration="5095000" />
+      <workItem from="1653202121953" duration="7417000" />
+      <workItem from="1653223318809" duration="1661000" />
+      <workItem from="1653265786869" duration="9589000" />
+      <workItem from="1653392756705" duration="843000" />
+      <workItem from="1653813052561" duration="1199000" />
+      <workItem from="1653835160344" duration="5189000" />
+      <workItem from="1653919026470" duration="1199000" />
+      <workItem from="1653997941355" duration="2892000" />
+      <workItem from="1654006987655" duration="741000" />
+      <workItem from="1655737878332" duration="689000" />
+      <workItem from="1655821703756" duration="69000" />
+      <workItem from="1655821792671" duration="601000" />
+      <workItem from="1655823710627" duration="52000" />
+      <workItem from="1655859987525" duration="4000" />
+      <workItem from="1656225244111" duration="17330000" />
+      <workItem from="1656243415223" duration="62000" />
+      <workItem from="1656246012611" duration="405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shl/test/Test2.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shl_learnform$CaseJudge.ic" NAME="CaseJudge Coverage Results" MODIFIED="1653206972457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.shl.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/shl_learnform$Test.ic" NAME="Test Coverage Results" MODIFIED="1615888938240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.shl.test.*</FILTER>
+    </SUITE>
+  </component>
+</project>

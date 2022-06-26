@@ -44,7 +44,7 @@ public class JsonUtils {
         try {
             return objectMapper.readValue(content, clazz);
         } catch (Exception var3) {
-
+            var3.printStackTrace();
             return null;
         }
     }

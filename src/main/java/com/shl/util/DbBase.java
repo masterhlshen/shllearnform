@@ -33,7 +33,9 @@ public class DbBase {
 	
 	protected void begin() throws ClassNotFoundException, SQLException{
 		Class.forName(DRIVER);
-		conn = DriverManager.getConnection(URL, USER, PWD);
+		if (conn == null) {
+			conn = DriverManager.getConnection(URL, USER, PWD);
+		}
 	}
 	
 }
