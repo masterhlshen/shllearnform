@@ -1,5 +1,8 @@
 package com.shl.deplayXc;
 
+import com.shl.algorithm.ag4.util.StdIn;
+import com.shl.deplayXc.fileopt.CatalinalogListener;
+import com.shl.deplayXc.fileopt.FileMonitor;
 import com.shl.util.JsonUtils;
 import org.apache.commons.compress.archivers.ArchiveException;
 import org.apache.commons.compress.archivers.ArchiveInputStream;
@@ -10,8 +13,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,11 +34,11 @@ public class DeplayedHelper {
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         DeplayedHelper helper = new DeplayedHelper();
         helper.loadCfg();
-        helper.backDir = helper.cfg.getServerPath() + "副本(" + (new SimpleDateFormat("yyyyMMdd").format(new Date())) + ")";
+        /*helper.backDir = helper.cfg.getServerPath() + "副本(" + (new SimpleDateFormat("yyyyMMdd").format(new Date())) + ")";
         // TODO 备份原有服务
         helper.copyServer(new File(helper.cfg.getServerPath()));
         // TODO 删除
@@ -93,8 +94,30 @@ public class DeplayedHelper {
                     }
                 }
             }
+        }*/
+
+        File dir = new File("D:\\xclog\\bin\\service\\tomcat\\apache-tomcat-xcadmin\\bin");
+        String[] cmd = {"cmd", "/c", "startup.bat"};
+        Runtime.getRuntime().exec(cmd, null, dir);
+
+        FileMonitor m = null;
+        try {
+            CatalinalogListener listener = new CatalinalogListener();
+            m = new FileMonitor(1000, "D:\\xclog\\bin\\service\\tomcat\\apache-tomcat-xcadmin\\logs", listener);
+            listener.setMonitor(m);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
+
+
+        System.out.println(">>>>>>>输入q退出");
+        String q = StdIn.readString();
+        if ("q".equals(q)) {
+            if (m != null) {
+                m.stop();
+            }
+        }
     }
 
     private void deleteSwaggerFile(File file) {
