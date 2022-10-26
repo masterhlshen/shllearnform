@@ -8,6 +8,36 @@ public class DeplayCfgVO {
     private Map<String, warCgfVO> appServer;
     private String resourceDir;
 
+    private String newWar;
+
+    private String newWarBackup;
+
+    private String newWarBat;
+
+    public String getNewWar() {
+        return newWar;
+    }
+
+    public void setNewWar(String newWar) {
+        this.newWar = newWar;
+    }
+
+    public String getNewWarBackup() {
+        return newWarBackup;
+    }
+
+    public void setNewWarBackup(String newWarBackup) {
+        this.newWarBackup = newWarBackup;
+    }
+
+    public String getNewWarBat() {
+        return newWarBat;
+    }
+
+    public void setNewWarBat(String newWarBat) {
+        this.newWarBat = newWarBat;
+    }
+
     public String getServerPath() {
         return serverPath;
     }
@@ -35,7 +65,17 @@ public class DeplayCfgVO {
 
 class warCgfVO {
     private String server;
-    private String cfgDir;
+    private String webApps;
+    private String logDir;
+    private String binDir;
+
+    public String getWebApps() {
+        return webApps;
+    }
+
+    public void setWebApps(String webApps) {
+        this.webApps = webApps;
+    }
 
     public String getServer() {
         return server;
@@ -45,11 +85,19 @@ class warCgfVO {
         this.server = server;
     }
 
-    public String getCfgDir() {
-        return cfgDir;
+    public String getLogDir() {
+        return logDir;
     }
 
-    public void setCfgDir(String cfgDir) {
-        this.cfgDir = cfgDir;
+    public void setLogDir(String logDir) {
+        this.logDir = logDir;
+    }
+
+    public String getBinDir() {
+        return binDir;
+    }
+
+    public void setBinDir(String binDir) {
+        this.binDir = binDir;
     }
 }

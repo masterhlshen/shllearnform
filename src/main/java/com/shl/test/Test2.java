@@ -1,21 +1,70 @@
 package com.shl.test;
 
+import com.shl.util.ExcelImportUtil;
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeoutException;
 
 public class Test2 {
 
     public static void main(String[] args) throws IOException, TimeoutException {
-        int a,b,c,d;
-        a=10;
-        b=a++;
-        c=++a;
-        d=10*a++;
-        System.out.println("a = " + a + " b = " + b + " c = " + c + " d = " + d);
+
+        String[][] header = new String[][]{{"菜单code", "string", "menuCode"}, {"别动", "string", "code"}};
+        String filePath = "D:\\DingDing\\dingdingdownlaod\\组件Code1012.xlsx";
+        Map map = ExcelImportUtil.excelToListMap(filePath, header);
+        List list = (List) map.get("list");
+        for (Object o : list) {
+            Map e = (Map) o;
+            System.out.println("update portlet_compoment set more_link ='" + e.get("menuCode") + "'  where type = '" + e.get("code") + "';");
+        }
     }
 
-    public static void select(String path,long sTime) throws IOException {
+    static void download() throws IOException {
+        Map<String, Object> varMap = new HashMap<>();
+        URL url = new URL("https://jymf.wuxing.gov.cn:37091/xcadmin/comp/attachment/download?fileid=e8aa300572014a51bdcfd32cdcf92485&ccc=c875e0529df0a4de08e9bb26e0e062ed");
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Accept", "*/*");
+        conn.setRequestProperty("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8");
+        conn.setRequestProperty("Accept-Encoding", "gzip, deflate");
+        conn.setRequestProperty("connection", "keep-alive");
+        conn.setRequestProperty("Charsert", "UTF-8");
+        conn.setRequestProperty("Content-Type", "application/octet-stream;charset=utf-8");
+        conn.setDoInput(true);
+        conn.setDoOutput(true);
+        // 不允许使用缓存
+        conn.setUseCaches(false);
+        StringBuilder sb = new StringBuilder();
+        for (Map.Entry<String, Object> entry : varMap.entrySet()) {
+            sb.append(entry.getKey()).append("=").append(URLEncoder.encode(entry.getValue() + "", "UTF-8")).append("&");
+        }
+        if (sb.length() > 0) {
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        System.out.println(sb);
+        int responseCode = conn.getResponseCode();
+        System.out.println("response code = " + responseCode);
+        PrintWriter out = new PrintWriter(conn.getOutputStream());
+        out.print(sb);
+        out.flush();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+        String line = "";
+        StringBuilder result = new StringBuilder();
+        while (StringUtils.isNotBlank((line = bufferedReader.readLine()))) {
+            result.append(line);
+        }
+        System.out.println(result);
+    }
+
+    public static void select(String path, long sTime) throws IOException {
         File[] fileArr = new File(path).listFiles();
         for (File f : fileArr) {
             String[] s = f.getName().split("_");

@@ -1,5 +1,6 @@
 package com.shl.deplayXc.fileopt;
 
+import com.shl.deplayXc.DeplayedHelper;
 import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
 
@@ -7,6 +8,13 @@ import java.io.*;
 
 public class CatalinalogListener extends FileAlterationListenerAdaptor {
     private FileMonitor monitor;
+    private DeplayedHelper helper;
+    private int index;
+
+    public CatalinalogListener(DeplayedHelper helper, int index) {
+        this.index = index;
+        this.helper = helper;
+    }
 
     public void setMonitor(FileMonitor monitor) {
         this.monitor = monitor;
@@ -27,6 +35,8 @@ public class CatalinalogListener extends FileAlterationListenerAdaptor {
                 System.out.println(line);
                 if (line.contains("org.apache.catalina.startup.Catalina.start Server startup")) {
                     monitor.stop();
+                    helper.startServer((index + 1));
+                    return;
                 }
             }
         } catch (IOException e) {
