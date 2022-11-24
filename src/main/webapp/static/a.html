@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <script>
+       window.onload = function (ev) {
+           var c = document.getElementById('myCanvas');
+
+           // 获取绘画环境
+           var context = c.getContext("2d");
+
+           context.fillStyle = "pink";
+           context.fillRect(0, 25, 100, 50);
+       }
+
+    </script>
+</head>
+<body>
+<canvas id="myCanvas" width="200px" height="100px"></canvas>
+</body>
+</html>

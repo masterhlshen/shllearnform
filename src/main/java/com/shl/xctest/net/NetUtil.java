@@ -1,6 +1,5 @@
-package com.shl.xctest;
+package com.shl.xctest.net;
 
-import com.shl.util.HandleResult;
 import com.shl.util.JsonUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -18,11 +17,6 @@ import java.util.Map;
 public class NetUtil {
 
     public static void main(String[] args) throws IOException {
-        Map<String, Object> varMap = new HashMap<>(8);
-        varMap.put("clientId", "8aa576ab914743b19147da78c0716f1a");
-        varMap.put("clientSecret", "b6fcea8c92024819adbc4409f72d4edd");
-        HandleResult handleResult = postJson(varMap, "https://test.xckj.net:9391/xcoffice/api/clientToken/login/client", HandleResult.class);
-        System.out.println(handleResult.getData());
 
     }
 
@@ -49,7 +43,6 @@ public class NetUtil {
         if (sb.length() > 0) {
             sb.deleteCharAt(sb.length() - 1);
         }
-        System.out.println(sb);
         PrintWriter out = new PrintWriter(conn.getOutputStream());
         out.print(sb);
         out.flush();
@@ -59,7 +52,6 @@ public class NetUtil {
         while (StringUtils.isNotBlank((line = bufferedReader.readLine()))) {
             result.append(line);
         }
-        System.out.println(result);
         return JsonUtils.readValueByClass(result.toString(), c);
     }
 
@@ -85,7 +77,6 @@ public class NetUtil {
         conn.setUseCaches(false);
 
         String jsonBody = JsonUtils.writeValueAsString(varMap);
-        System.out.println(jsonBody);
         PrintWriter out = new PrintWriter(conn.getOutputStream());
         out.print(jsonBody);
         out.flush();
@@ -95,7 +86,6 @@ public class NetUtil {
         while (StringUtils.isNotBlank((line = bufferedReader.readLine()))) {
             result.append(line);
         }
-        System.out.println(result);
         return JsonUtils.readValueByClass(result.toString(), c);
     }
 
@@ -108,7 +98,6 @@ public class NetUtil {
             sb.deleteCharAt(sb.length() - 1);
         }
         urlPath += "?" + sb.toString();
-        System.out.println(urlPath);
         URL url = new URL(urlPath);
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -130,7 +119,6 @@ public class NetUtil {
         while (StringUtils.isNotBlank((line = bufferedReader.readLine()))) {
             result.append(line);
         }
-        System.out.println(result);
         return JsonUtils.readValueByClass(result.toString(), c);
     }
 }

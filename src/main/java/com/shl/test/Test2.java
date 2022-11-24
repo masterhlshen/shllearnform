@@ -1,30 +1,44 @@
 package com.shl.test;
 
-import com.shl.util.ExcelImportUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
 public class Test2 {
 
-    public static void main(String[] args) throws IOException, TimeoutException {
-
-        String[][] header = new String[][]{{"菜单code", "string", "menuCode"}, {"别动", "string", "code"}};
-        String filePath = "D:\\DingDing\\dingdingdownlaod\\组件Code1012.xlsx";
-        Map map = ExcelImportUtil.excelToListMap(filePath, header);
-        List list = (List) map.get("list");
-        for (Object o : list) {
-            Map e = (Map) o;
-            System.out.println("update portlet_compoment set more_link ='" + e.get("menuCode") + "'  where type = '" + e.get("code") + "';");
+    public static void main(String[] args) throws IOException, TimeoutException, NoSuchAlgorithmException {
+        String appkey = "bmdehs6pb8w1s";
+        String secret = "V6n8xIyqiurKY";
+        Random r = new Random(System.currentTimeMillis());
+        long current = System.currentTimeMillis();
+        int notice = r.nextInt();
+        String res = secret + notice + current;
+        final MessageDigest messageDigest = MessageDigest.getInstance("SHA");
+        final byte[] digests = messageDigest.digest(res.getBytes());
+        final StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < digests.length; i++) {
+            int halfbyte = (digests[i] >>> 4) & 0x0F;
+            for (int j = 0; j <= 1; j++) {
+                stringBuilder.append(
+                        ((0 <= halfbyte) && (halfbyte <= 9))
+                                ? (char) ('0' + halfbyte)
+                                : (char) ('a' + (halfbyte - 10)));
+                halfbyte = digests[i] & 0x0F;
+            }
         }
+        System.out.println(notice);
+        System.out.println(current);
+        System.out.println(stringBuilder.toString());
     }
 
     static void download() throws IOException {
