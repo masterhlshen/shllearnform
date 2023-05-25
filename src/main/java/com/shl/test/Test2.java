@@ -39,6 +39,13 @@ public class Test2 {
         System.out.println(notice);
         System.out.println(current);
         System.out.println(stringBuilder.toString());
+
+
+        Random rr = new Random();
+
+        System.out.println(rr.nextInt(7));
+
+
     }
 
     static void download() throws IOException {

@@ -5,7 +5,7 @@ import java.io.File;
 public class DeleteXCProjectOverlays {
     public static void main(String[] args) {
         DeleteXCProjectOverlays dxc = new DeleteXCProjectOverlays();
-        dxc.execute("E:\\IdeaProjects\\xcenv_out");
+        dxc.execute("E:\\IdeaProjects\\xcenv_local_shl_future");
 
     }
 

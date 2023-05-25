@@ -6,7 +6,7 @@ import java.awt.*;
 public class AgloFrame extends JFrame {
 
     public AgloFrame(String title) {
-        this(title, 1024, 768);
+        this(title, 1024 * 2, 1024);
     }
 
     public AgloFrame(String title, int canvasWidth, int canvasHeigth) {
@@ -36,7 +36,16 @@ public class AgloFrame extends JFrame {
         @Override
         public void paint(Graphics g) {
             super.paint(g);
-            g.drawOval(50, 50, 300, 300);
+
+            Graphics2D gd = (Graphics2D) g;
+
+            AgloVisHelper.setStrokeWidth(gd, 5);
+
+            gd.setColor(Color.RED);
+            AgloVisHelper.strokeCircle(gd, canvasWidth / 2, canvasHeight / 2, 500);
+            gd.setColor(Color.BLUE);
+            AgloVisHelper.fillCircle(gd, canvasWidth / 2, canvasHeight / 2 , 500);
+
         }
 
         @Override

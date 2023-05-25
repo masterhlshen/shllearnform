@@ -34,16 +34,7 @@ public class Test {
             len = len - cnt;
             preIndex += cnt;
         }*/
-        int i = 1697379929;
-        String s = "59F62B65";
-        String trans = Integer.toHexString(i);
-        int index = trans.length();
-        List<String> list = new LinkedList<>();
-        while (index > 0) {
-            list.add(trans.substring(index - 2, index));
-            index -= 2;
-        }
-        System.out.println(String.join("", list).toUpperCase());
+
 
         Test t = new Test();
         long start = System.currentTimeMillis();
@@ -171,11 +162,11 @@ public class Test {
 
         System.out.println(JsonUtils.writeValueAsString(m));
 
-        s = "ä½_æ¸©æ£_æµ_è¡¨(è¡¨å__).zip";
+        String s = "ä½_æ¸©æ£_æµ_è¡¨(è¡¨å__).zip";
         System.out.println(URLDecoder.decode(s, "ISO8859-1"));
 
         int[] array = {4,2,1,5,3,3,3,-2,-3,0};
-        for ( i = 1; i < array.length; i++) {
+        for ( int i = 1; i < array.length; i++) {
             for (int j = 0; j < array.length - i; j++) {
                 if (array[j] > array[j + 1]) {
                     array[j] = array[j] ^ array[j + 1];
