@@ -138,6 +138,13 @@
             <version>1.10.10</version>
         </dependency>
 
+        <dependency><!--PDF操作工具包-->
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox-app</artifactId>
+            <version>2.0.16</version>
+        </dependency>
+
+
         <!--截取视频第一帧 START-->
         <!-- <dependency>
             <groupId>org.bytedeco</groupId>
