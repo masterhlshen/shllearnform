@@ -6,44 +6,28 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
 public class Test2 {
 
-    public static void main(String[] args) throws IOException, TimeoutException, NoSuchAlgorithmException {
-        String appkey = "bmdehs6pb8w1s";
-        String secret = "V6n8xIyqiurKY";
-        Random r = new Random(System.currentTimeMillis());
-        long current = System.currentTimeMillis();
-        int notice = r.nextInt();
-        String res = secret + notice + current;
-        final MessageDigest messageDigest = MessageDigest.getInstance("SHA");
-        final byte[] digests = messageDigest.digest(res.getBytes());
-        final StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < digests.length; i++) {
-            int halfbyte = (digests[i] >>> 4) & 0x0F;
-            for (int j = 0; j <= 1; j++) {
-                stringBuilder.append(
-                        ((0 <= halfbyte) && (halfbyte <= 9))
-                                ? (char) ('0' + halfbyte)
-                                : (char) ('a' + (halfbyte - 10)));
-                halfbyte = digests[i] & 0x0F;
-            }
+    public static void main(String[] args) throws IOException, TimeoutException, NoSuchAlgorithmException, ParseException {
+        Date date = new Date();
+        int switchInt = 0;
+        if (switchInt > 0) {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            date = sdf.parse("2020-01-01");
         }
-        System.out.println(notice);
-        System.out.println(current);
-        System.out.println(stringBuilder.toString());
 
+       // System.out.println(date.getTime());
 
-        Random rr = new Random();
-
-        System.out.println(rr.nextInt(7));
+        System.out.println(Integer.MAX_VALUE);
 
 
     }
