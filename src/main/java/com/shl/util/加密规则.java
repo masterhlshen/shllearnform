@@ -3,13 +3,21 @@ package com.shl.util;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.ParseException;
 
 public class 加密规则 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         SHA1("好吗，好的");
         System.out.println(md5String("好吗，好的"));
 
+        String a = "2021-12-15 17:16:06";
+        System.out.println(a.substring(0, 4));
+        System.out.println(a.substring(5, 7));
+        System.out.println(a.substring(0, 10));
+
+        int i = 1001;
+        System.out.println(Math.ceil(i / 1000.0));
     }
 
     static void SHA1(String data) {

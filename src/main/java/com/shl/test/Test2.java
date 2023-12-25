@@ -8,8 +8,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -18,17 +16,8 @@ import java.util.concurrent.TimeoutException;
 public class Test2 {
 
     public static void main(String[] args) throws IOException, TimeoutException, NoSuchAlgorithmException, ParseException {
-        Date date = new Date();
-        int switchInt = 0;
-        if (switchInt > 0) {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            date = sdf.parse("2020-01-01");
-        }
-
-       // System.out.println(date.getTime());
-
         System.out.println(Integer.MAX_VALUE);
-
+        System.out.println(Integer.MAX_VALUE - 1);
 
     }
 
@@ -93,7 +82,7 @@ public class Test2 {
     }
 
     private static void pdfTest() {
-        String srcPath = "http://yun.xckj.net/xcoffice/xcurl/printform?access_token=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNp8Vc-P20QU_l9ydio7iZM4txKt-LXlACsBx-fxiz2b8Yw7Mw72Ig6gnkBa6KESCKRSqeqth3JCwJ_TbMt_wRvbydrsdg9RPJ_fr-97z2--Hp1bPlqNQsaiKYuS8TRcRuPZkvnjaLaZjONZOA38ZObHUzbyRqaMyXjCIh_ieD5PEpyFy9gP5uj7mxiSIPan4Ay5MWSY12qz4QwLARbHVm1Rjg3qHWpnAna0CuaT5WK2WMxn3girogMiP3KA0uknkCMFunryy_77Z_vnj8iPKV18mBDo06FAna9Vgi4blxu1yoFLS7-V7weeqY3F_AFISFF7UukcxOGkpOAST3YgSrBctQ6W53gGscDVjuNXDZSD4WZFTqJ2Dw6ipEZJiYKyuWA9ux7ABBijEdvIN4vTmHIqT_d9DAjQ9crWRXtONSRU3qGcwMMKjnwabTmIlUHbWN8ArIb6YF1odf7gOtPDEo2jLYFr_Ayt5TJteSA2z21VuqWiSm3ISiBrpOpXPJDYUHN62lF-Ll2wI5Kp0hwyta5rJU2ZO83NIQokiUZjTkmegdMxSptmkMEdqqw4Mpx4lmXE2RnYQZ-UJoVYzQR2bTDEjnVsWKaUeA_ktuOdF6TG_zlfT0lzYlmO0ppb-sgyZG0kSHbcYN9kOI3GluOHJQhu675Rn9GhujUIlAnoHpvrYW2OCVhww2J4KstiUDnmxaCzrYN7iot88Kaj0Id2KEscILd8L0Nx7qxvIP2Q6rCVN4kM398m07GJ7xyzu2LcMfG3fbeZyrFNO5iC4ddwPbXvju72Yp42663bstEiipNlDKEfLCIWAsJiEk3C5catY6y6PdgmP6O9QUCKEklngrUSeFiPVZUKmsOcSw-E8LZxKmqv0TK-qH1_4bFtKnRNf-aC_uLcva84qAxUQU7uMaZB59vSq4Af4RK26F2Y90-_9M7JxGTcO6-c7xcft7yojpK2frfK9__8_u_fl1c_X3Zwn-tdNwpdBkNZYBGizwKSBZZhMMVlGM6jzbQ1PVXycHespz5dH2-_--P1X4_vXb16-vaHH9_89u2bX3_aP718_efL_csX9_rXC08cR1t3Wp6d3F9_cPJpG9VJSVjNPvp83ZV_n1EzpXUoSOLuevjNfwAAAP__.qeHWSyjqPwj4VLGpuCL6hkwvZM1PCAIV3y5ZSMa21AIrI1hvpfRYi-G0fBfWO-SZkOXoKRhNdSTPLXny14zo_w&formKey=2c90abb975d19ba70175d5a378851a23&bpmBusinessKey=35406221d358469f96c97289add8c6b7&showPrintCommend=false&startUser=2c90abb66dde458b016e00fbad1b03ac&processId=8471251";
+        String srcPath = "https://test.xckj.net:9391/xcoffice/xcurl/printform?access_token=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNqUV81u3DYQfpViz9pC0q69u7o5hosEiNui8SW9LChqtMtYIhWS2lgteuu96KGH3JJLbw1yKVqg6NvU7mt0SOqHUtZxc_BaooacmW9mvhl-P3uh2SyZhflpvMnzeJ6meTRfbrLFfB1COKeQL8Llcp1DtJoFM1WnKBzTTUhSulxHq5OYZCdhhE-n0XqZ43NMAAWZUihYNiLPGYWqIBrmWlwDnyuQB5BGhOhZEq3C-DQ-OVltghncVO3C6XplFoTcfUlKwINu3729e_Pn7fuf_v3rR9xKhayeZMaSaJNSGsWLTZwv0xgt2kC-XpNsGW7iFYlQtgJZnosMjD0c_0dhmBwYvErCMAqu9hLgfA_0OikJJzvA1Th4JeT1VkIlpN7WuN-KVkTqZltCmeJCLxwFgheMw8WBFDXRTHBvcVsAkZzx3Vb1x2ggdA8Sj6eyZroErr2vpZCkSDKiiTMxRrWNkek0viL8hllRDIViWWMNJloDzwinkCiNVijNqHLqWAlXJC1g8JnxXCQKCqDa6SSKqQSPLxrzYH0FqQTnUPiO7kUJiu6FGK12LiqMCWzdB89g49YiqFSDGwuxa_ytx8BfBE4FAq0ULm2n0NTauUxFLRUkRErCW41jAJNwcxPsJMkwLPBM15mH4uC2t2CifkXUdUIoFWVVMLWHzH6hBVEKbeUDfiVhXOOfXXlZk4Jhnrv4e0dK2GEsxvnSq-kjhQbbgJKCyCbRTeUEla4v3TZvdyZkuQdS6P0Q0OFE0BpDMUmPZY9CuyUK4IaU7mwZ2AplaAPudrk7XdCSNJ10JcWLS99BUyQuwTAG9UT1YrDN4QTKQMQJk_DMMzYl9LrT0EYQ_WRayMZ-R_hBKy-lIpMmkNXFCJy2VuYfZKGLIkjtooRpk5Vt7Iz9qK83fidMno9V9f6YdFdYGUkObTChoKYs2vQaeIXuvxnHvrPappFq8Es5-uKhzjOH_KIjiwQm7NLJIokAO0AnXgJYSB84d9kWzzPLAZOUTYmCJzbDO0SQlkEyi6aFLdB0b95U-0rrQteyxRQRgWs4DJ8d9KIsa86wdJ1QWpVfS0ERy0HNcaeWgcOqyw7D4PGAs2Wd4RUzlRkyGla-YJqjmrnGGI3JrFZd9pkzFz4_asCK0Vj8vXFGZOmp7TPipLXvXHBVl6YOVGcqyTKJqp9iFjgHEUYbw20qiMyOWTPxa-SSeckZtyQ_aQbx_2FhDC377rxWWpSDXwPRSzElqpt9dTn0RAw61r6xZoSjoRZwLPDJunpvJSZim3ay9ElUTojQjBGPkCvapMJAcd1xZKeGmoaCULDxIY5WaEOLjrkUFgGFD3tL2-p7-vN5o6pT0xeO1b43PxTo35bwbJuLGn-H9u562yPCOw_KCit2WoKfFSRNSIVwH7qqGtq41ymsp-4gC_Vj1xd8r0l2YAo-sV_HmO4Yh6JPZGRfpawQ45kBQvSBmdvep5v7Eifyd2PZjA9AHuj0OrRjX9x3xIeEkrKqVQvmOSnM6CM_0GW6azsEufB66eaY2fYlX4kdDwc5f5ZAZ9mO15Xvpw3NBbbSjuXahPdObNG5hIx86tS0RPYvqyM5PAHOzwh_CTm4nvSxruswd0iNo_gZz76SO693u-mrH9jsdPLAzDaOjqi0X4PDlHJPqzzWCyYsPyHoCRnfX4eTeE5BOzrlfowR72ew4wPuQ2B-pCMcv5gcR__eocJcssqdvSiZuxvcmIueebJ2XeGgiQs74GhFgctSFNDdlOysCSSQymrIiAqeP__2UaBe7IpW4VlhNpkkai9p__z9-u73P9o1dz17-KKId7yR6CpfrzabdBVG-ESj1QLoMsQrHorCy5pVpkpayyvq9j8VvLsnov7b9z_fvX5398vr299-vXvz9vPJ1ZGZJMGSbM-4ujg7f3zxjTvIOI9rat_6cIYXgZrjLXUmRDX74T8AAAD__w.xxgYSfbNUgGbbGcJLab7tLXorNzgBoN9S3ELaSOiZuOFITu-uQI_HhGRes6KeUii80BBJIW8KYbId_N08Y_Jng&formKey=402894ee8c6b3cc2018c6b4bee34003f&bpmBusinessKey=8ee110c5c0c5494db6db8556c88fce89";
 //        srcPath = "http://116.62.48.123/xcoffice/static/aaa.html";
 //        srcPath = "https://developer.aliyun.com/article/353699";
         String BASEDIR = "D:\\";
