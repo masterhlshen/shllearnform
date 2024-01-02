@@ -33,10 +33,10 @@
         </dependency>
 
         <!--thymeleaf-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>ognl</groupId>
             <artifactId>ognl</artifactId>
@@ -144,6 +144,12 @@
             <version>2.0.16</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+
 
         <!--截取视频第一帧 START-->
         <!-- <dependency>
@@ -193,12 +199,6 @@
             <version>3.4.0</version>
         </dependency>
 
-        <!--Rabbit MQ -->
-        <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-
-        </dependency>
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
