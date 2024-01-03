@@ -19,6 +19,10 @@ public class Test2 {
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.MAX_VALUE - 1);
         System.out.println(System.currentTimeMillis());
+<<<<<<< HEAD
+=======
+        
+>>>>>>> b5027a7815f6788eb55901d0ce741d297478214b
     }
 
     static void download() throws IOException {
