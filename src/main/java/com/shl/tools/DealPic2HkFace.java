@@ -1,14 +1,18 @@
-package com.shl.java基础.反射;
+package com.shl.tools;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class ReflectDemo {
+/**
+ * 海康人脸识别图片处理工具
+ *
+ * @author shl
+ */
+public final class DealPic2HkFace {
 
     public static void main(String[] args) throws IllegalAccessException, IOException, InterruptedException {
 
@@ -29,6 +33,8 @@ public class ReflectDemo {
                 continue;
             }
             BufferedImage bufferedImage = ImageIO.read(imageFile);
+            String[] propertyNames = bufferedImage.getPropertyNames();
+
 
             // 获取图片的宽度和高度
             int width = bufferedImage.getWidth();
@@ -37,13 +43,15 @@ public class ReflectDemo {
                 String a = imageFile.getAbsolutePath();
                 String name = imageFile.getName();
                 String b = trans + "/" + name;
-                String format = String.format("D:/ImageMagick-7.1.1-Q16-HDRI/magick.exe convert -resize %s %s %s",  "500x500", a, b);
+                // 宽高反向，并且去掉图片的相关无用信息
+                String format = String.format("D:/ImageMagick-7.1.1-Q16-HDRI/magick.exe convert +profile \"*\" -resize %s %s %s", height + "x" + width, a, b);
                 Process exec = Runtime.getRuntime().exec(format);
 
                 exec.waitFor();
 
                 String c = resPath + "/" + name;
-                format = String.format("D:/ImageMagick-7.1.1-Q16-HDRI/magick.exe convert -rotate %s %s %s", 90, b, c);
+                // 更改宽高
+                format = String.format("D:/ImageMagick-7.1.1-Q16-HDRI/magick.exe convert -resize 500x500> -rotate %s %s %s", 90, b, c);
                 Process exec1 = Runtime.getRuntime().exec(format);
 
                 exec1.waitFor();
@@ -90,25 +98,4 @@ public class ReflectDemo {
         in.close();
         out.close();
     }
-
-
-    static class ImageCompress {
-
-        public static void compressImage(File src, File dest, String suffix, int kb) throws IOException {
-            BufferedImage image = ImageIO.read(src);
-            long imageSize = src.length();
-            double quality = (1024.0 * kb) / imageSize;
-            ImageIO.write(compress(image, quality), suffix, dest);
-        }
-
-        private static BufferedImage compress(BufferedImage image, double quality) {
-            Image scaledImage = image.getScaledInstance((int) (quality * image.getWidth()), (int) (quality * image.getHeight()), Image.SCALE_SMOOTH);
-            BufferedImage bufferedImage = new BufferedImage((int) (quality * image.getWidth()), (int) (quality * image.getHeight()), BufferedImage.TYPE_INT_RGB);
-            Graphics2D graphics = bufferedImage.createGraphics();
-            graphics.drawImage(scaledImage, 0, 0, null);
-            graphics.dispose();
-            return bufferedImage;
-        }
-    }
-
 }
